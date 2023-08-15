@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .user-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 415px;
+    background: linear-gradient(to bottom right, #2545C7, #CEF0EF);
+  }
+  
+  .user-card img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-card p {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .user-card button {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    width: 85px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .user-card button:hover {
+    background-color: #c62828;
+  }
+  
+@media screen and (max-width: 768px) {
+    .user-card {
+      width: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .user-card {
+      width: 100%;
+      max-width: 250px;
+    }
+    .user-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .user-card {
+      width: 100%;
+      max-width: 200px;
+    }
+    .user-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+  }
